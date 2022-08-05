@@ -94,7 +94,7 @@ class _MyAppState extends State<MyApp>
 
   Future<InitData> _initConnection() async {
     String? apiKey, userId, token;
-
+    apiKey = "fumy4gw5vu9r";
     if (!kIsWeb) {
       final secureStorage = FlutterSecureStorage();
       apiKey = await secureStorage.read(key: kStreamApiKey);
